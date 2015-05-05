@@ -24,7 +24,7 @@ $(document).on('ready', function(){
         //
         // 2.   Define the location of the Flickr API like this:
         //      `var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";`
-	var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+//	var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         //
         // 3.   Construct a `$.getJSON()` call where you send a request object
         //      including the tags the user submitted, and a `done()` handler
@@ -46,6 +46,7 @@ function(data) {
 
     // Attach an event to the search button (`button.search`) to execute the
     // search when clicked.
+	onClick(button.search);
 
         // When the Search button is clicked, the following should happen:
         //
