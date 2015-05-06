@@ -13,7 +13,7 @@ $(document).on('ready', function(){
     // response.
 	function searchImages()
 {
-
+}
     // Inside the `searchImages()` function, the following things should happen:
 
         // 1.   Accept a string value called `tags` as an argument. Example:
@@ -24,7 +24,7 @@ $(document).on('ready', function(){
         //
         // 2.   Define the location of the Flickr API like this:
         //      `var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";`
-//	var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+	var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         //
         // 3.   Construct a `$.getJSON()` call where you send a request object
         //      including the tags the user submitted, and a `done()` handler
