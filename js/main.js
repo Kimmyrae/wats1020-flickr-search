@@ -41,7 +41,10 @@ $(document).on('ready', function(){
 			  $.each( data.items, function( i, item ) {
 				var newListItem = $("<li>");
 				var description = $("<p>").html(item.description).appendTo(newListItem);
-				var	tags = $("tags").html(item.tags).appendTo(newListItem);
+				var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
+				var newDescription = $('<p class="image-description">').html(item.description).appendTo(newListItem);
+				var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
+
 
 				var newButton = $("<button class='btn btn-sm btn-primary'>enlarge</button>").attr({
 					  'data-title': item.title,
