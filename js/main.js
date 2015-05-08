@@ -87,4 +87,5 @@ $(document).on('ready', function(){
 
 
   });   
-
+// try adding this code somewhere. 
+// var newTitle = $('<p class = "image-title">').html(item.title).appendTo(newListItem);
