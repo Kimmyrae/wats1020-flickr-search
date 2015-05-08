@@ -21,7 +21,7 @@ $(document).on('ready', function(){
       $('#images').empty();
       $('h1.search-title').first()[0].innerHTML = "Search for: " + tags;
       $.each( data.items, function( i, item ) {
-        var newListItem = $("<li>")
+        var newListItem = $("<li>");
         // If you're not doing the modal, then show info about the image.
         var newTitle = $('<p class="image-title">').html(item.title).appendTo(newListItem);
         var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
