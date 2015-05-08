@@ -40,6 +40,8 @@ $(document).on('ready', function(){
 			  $('h1.search-title').first()[0].innerHTML = "Search for: " + tags;
 			  $.each( data.items, function( i, item ) {
 				var newListItem = $("<li>");
+				var description = $("<p>").html(item.description).appendTo(newListItem);
+				var	tags = $("tags").html(item.tags).appendTo(newListItem);
 
 				var newButton = $("<button class='btn btn-sm btn-primary'>enlarge</button>").attr({
 					  'data-title': item.title,
